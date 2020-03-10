@@ -1,5 +1,5 @@
 alias -l bash {
-  if ($chan == #gnulag) { halt } 
+  if ($chan == #ignoredchannelhere) { halt } 
   if (!$($+(%,#,bash),2)) { inc -u10 $+(%,#,bash)
     if ($sock($+(bash,#))) sockclose $+(bash,#) 
     sockopen $+(bash,#) www.bash.org 80 
