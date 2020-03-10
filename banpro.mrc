@@ -1,6 +1,6 @@
 on *:BAN:#: {
-  if ($bnick == Protheus) {
-    /cs unban # Protheus
+  if ($bnick == yournickhere) {
+    /cs unban # yournickhere
     /ban # $nick 
     kick # $nick Don't do that.
   }
