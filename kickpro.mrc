@@ -1,6 +1,6 @@
 on *:KICK:#: {
-  if ($knick == Protheus) {
-    sajoin Protheus #
+  if ($knick == yournickhere) {
+    sajoin yournickhere #
     ban # $nick 
     kick # $nick Don't do that.
   }
