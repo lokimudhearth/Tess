@@ -1,5 +1,5 @@
 on 1:TEXT:*:#: {
-  if ($chan == #gnulag) { halt }
+  if ($chan == #ignoredchannelhere) { halt }
   if ($me == $1) { halt }
   if ($remove($1,$chr(58),$chr(44),$chr(64)) ison $chan) { set -u3 %whois.chan $chan | whoischeck $nick $remove($1,$chr(58),$chr(44),$chr(64)) }
   if ($remove($1,$chr(58)) !ison $chan) { halt }
